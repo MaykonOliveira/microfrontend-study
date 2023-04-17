@@ -1,0 +1,17 @@
+<single-spa-router>
+
+  <div class="baseApp">
+    <div class="navigation">
+      <application name="@sudo/sudo-navbar"></application>
+    </div>
+    <main>
+      <route path="/clients">
+          <application name="@sudo/sudo-clients"></application>
+      </route>
+      <route path="/business">
+        <application name="@sudo/sudo-business"></application>
+      </route>
+    </main>
+  </div>
+
+</single-spa-router>
