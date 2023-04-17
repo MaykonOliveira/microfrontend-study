@@ -16,17 +16,26 @@
       >
           <UilSuitcaseAlt />
       </router-link>
+
+      <router-link
+              to="/config"
+              class="nav-link"
+              :class="{'active-nav-link': $route.path === '/config'}"
+      >
+          <UilMouseAlt />
+      </router-link>
   </nav>
 </template>
 
 <script>
-import { UilUsersAlt, UilSuitcaseAlt } from '@iconscout/vue-unicons'
+import { UilUsersAlt, UilSuitcaseAlt, UilMouseAlt } from '@iconscout/vue-unicons'
 
 export default {
   name: 'App',
     components: {
         UilUsersAlt,
-        UilSuitcaseAlt
+        UilSuitcaseAlt,
+        UilMouseAlt
     }
 }
 </script>

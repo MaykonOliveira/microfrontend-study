@@ -33,6 +33,12 @@ registerApplication({
   activeWhen: "/business",
 });
 
+registerApplication({
+  name: "@sudo/sudo-config",
+  app: () => System.import("@sudo/sudo-config"),
+  activeWhen: "/config",
+});
+
 layoutEngine.activate();
 
 start({
